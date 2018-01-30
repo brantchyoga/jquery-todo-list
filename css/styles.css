@@ -46,7 +46,8 @@ form {
 }
 #tasklist, #finished {
 	display: inline-block;
-	width: 20vw;
+	vertical-align: top;
+	width: 18vw;
 	margin: 0 auto 0 auto;
 	color: white;
 	vertical-align: top;

@@ -33,6 +33,16 @@ var clearList = function() {
 
 $("document").ready(function() {
 	$('#submit').on('click', addListItem);
+//Adds new list item when enter is pressed only
+// if theres a value
+	$('#tasktodo').keypress(function(e){
+        if(e.which == 13){
+        	e.preventDefault();
+        	if ($("#tasktodo").val()) {
+        		addListItem();
+        	}
+        }
+    });
 	$('#delete').on('click', clearList);
 //grabs the parent element of the event handler <a>
 	$('#finished').on("click", 'a',clearItem);
