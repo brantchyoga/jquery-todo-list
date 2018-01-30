@@ -1,0 +1,64 @@
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url("https://www.walldevil.com/wallpapers/a45/list-mission.jpg");
+	background-color: #2a3f60;
+}
+h1 {
+	font-size: 7em;
+	margin-bottom: 0;
+	color:#bccae0;
+	width: 50vw;
+	text-align: center;
+}
+form {
+	width: 50vw;
+	border-radius: 8px;
+	border: 2px solid #bccae0;
+	padding: 2px;
+}
+#tasktodo {
+	position: relative;
+	left: 5px;
+	width:20vw;
+	margin: 0 3vw 0 0;
+}
+#submit, #delete {
+	width: 10vw;
+	margin: 0 auto 0 1vw;
+}
+.container {
+	width: 50vw;
+	text-align: center;
+	margin-top: 2vh;
+}
+.listTitles {
+	width: 50vw;
+	margin: 0;
+}
+.listTitles h3 {
+	display: inline-block;
+	text-decoration: underline;
+	width: 24.5vw;
+	color: #35f70e;
+	letter-spacing: 3px;
+	font-size: 1.7em;
+}
+#tasklist, #finished {
+	display: inline-block;
+	width: 20vw;
+	margin: 0 auto 0 auto;
+	color: white;
+	vertical-align: top;
+	height: 10vh;
+	list-style: none;
+}
+#tasklist a {
+	display: none;
+}
+#tasklist, #finished li {
+	position: relative;
+	right: 20px;
+}
+
+
