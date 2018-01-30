@@ -51,15 +51,14 @@ form {
 	margin: 0 auto 0 auto;
 	color: white;
 	vertical-align: top;
-	height: 10vh;
 	list-style: none;
+	border-bottom: 2px solid white;
 }
 #tasklist a {
 	display: none;
 }
 #tasklist, #finished li {
+	color: #bccae0;
 	position: relative;
 	right: 20px;
 }
-
-

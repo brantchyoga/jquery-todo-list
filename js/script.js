@@ -2,14 +2,18 @@
 $("#tasklist, #finished").sortable({
       connectWith: ".sortable"
     }).disableSelection();
+
 //Grabs the clicked <a> tag and removes the parent
 //element <li>
+
 var clearItem = function() {
 	$(this).parent().remove();
 }
+
 //Function creates li & a tags, adds a class,
 //grabs the value from the input field and
 //puts it into html list
+
 var addListItem = function() {
 	var removeItem = $('<a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete</a>');
 	var newListItem = $('<li>').text($("#tasktodo").val());;
@@ -36,7 +40,7 @@ $("document").ready(function() {
 //Adds new list item when enter is pressed only
 // if theres a value
 	$('#tasktodo').keypress(function(e){
-        if(e.which == 13){
+        if(e.which === 13){
         	e.preventDefault();
         	if ($("#tasktodo").val()) {
         		addListItem();
